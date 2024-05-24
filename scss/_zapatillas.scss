@@ -1,0 +1,58 @@
+.body-zapatillas{
+    background-color: black;
+    color: white;
+}
+.selector-zapatillas{
+    text-align: center;
+    background-color: grey;
+    height: 100%;
+    font-size: 2em;
+    border: 1px solid black;
+    
+
+     a{
+        color: black;
+        transition: .5s;
+    }
+}
+
+
+.seccion-productos{
+    padding: 4rem 0 3rem;
+    .seccion-productos-titulo{
+        @extend .titulo;
+        font-style: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 0% !important;
+    }
+
+    .productos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+        gap: 1.5rem;
+    
+        .producto{
+            position: relative;
+            transition: .2s ease-in-out;
+            .producto-img{
+                width: 100%;
+                aspect-ratio: 1/1;
+                margin-bottom: .5rem;
+                
+            }
+            
+        }
+    }
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+    width: 100%;
+}
+.producto:hover{
+    padding: 10px;
+    border: 2px solid red;
+}
+    

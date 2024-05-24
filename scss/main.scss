@@ -1,0 +1,186 @@
+@import 'zapatillas';
+@import 'contacto';
+@import 'preguntas';
+@import 'variables';
+
+*{
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+main{
+    margin-bottom: 3%;
+}
+@font-face {
+    font-family:japanola;
+    src: url(../resorces/typo/Japanola.otf);
+}
+body{
+    background-color: $color-fondo;
+}
+.body-zapatillas{
+    background-color: #1e2023 !important;
+}
+
+//ESTILOS DEL NAV
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9%;
+    width: 101%;
+    background-color: black;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+
+    .div-item{
+        .nav-item{
+            color: white;
+            transition: .5s;
+            text-align: center;   
+        }
+        .nav-item:hover{
+            color: $color-titulos;   
+        }
+    }
+
+    .logo{
+        font-family: japanola;
+        color:$color-titulos;
+        font-size: 4.3em;
+        text-align: center;
+       }
+
+        
+}
+    
+
+//estilos del footer
+
+footer{
+    background-color: black;
+    height: 6%;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    
+   
+    h4{
+        color: white;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .iconos{
+        height: 48px;
+    width: 48px;
+    
+    }
+}
+    main{
+        .titulo{
+            margin-top: 6%;
+            text-align: center;
+            color: $color-titulos;
+            margin-bottom: 7%;
+        }
+         .about1{
+            max-width: 87%;
+            margin: auto;
+            margin-bottom: 7%;
+
+            
+            .img-about-container{
+                margin-bottom: 5%;
+                
+
+                .img-about{
+                    width: 100%;
+                    height: 100%;
+                    margin-right: auto;  
+                    
+                }
+            }
+            .titulo-about{
+               @extend .titulo;
+                margin-top: -5%;
+                margin-bottom: 1%;
+            }
+            .texto-about{
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: auto;
+                color: white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
+
+
+//MEDIAS
+
+@media (max-width:2560px){
+    .selector-zapatillas{
+        margin-top: 5%;
+    }
+
+    .seccion-productos{
+        padding: 5%;
+    }
+}
+@media (max-width:1024px){
+    .selector-zapatillas{
+        margin-top: 7%;
+    }
+    .titulo-preguntas{
+       
+        margin-top: 8%;
+    }
+}
+@media (max-width:768px){
+    .selector-zapatillas{
+        margin-top: 9%;
+    }
+    .titulo-preguntas{
+       
+        margin-top: 10%;
+    }
+}
+@media (max-width:767px){
+   
+    .nav{
+        position: absolute;
+        height: 30%;
+    }
+    main{
+        margin-top: 80%;
+        margin-bottom: 5%;
+    }
+
+    form{
+        margin: auto;
+    }
+
+    .mapa{
+        margin: auto;
+        
+    }
+    
+    
+    .logo{
+        text-align: left;
+    }
+    .nav-item{
+        text-align: left;
+    }
+}

@@ -1,0 +1,198 @@
+.body-zapatillas {
+  background-color: black;
+  color: white; }
+
+.selector-zapatillas {
+  text-align: center;
+  background-color: grey;
+  height: 100%;
+  font-size: 2em;
+  border: 1px solid black; }
+  .selector-zapatillas a {
+    color: black;
+    transition: .5s; }
+
+.seccion-productos {
+  padding: 4rem 0 3rem; }
+  .seccion-productos .seccion-productos-titulo {
+    font-style: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0% !important; }
+  .seccion-productos .productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1.5rem; }
+    .seccion-productos .productos .producto {
+      position: relative;
+      transition: .2s ease-in-out; }
+      .seccion-productos .productos .producto .producto-img {
+        width: 100%;
+        aspect-ratio: 1/1;
+        margin-bottom: .5rem; }
+
+.container {
+  max-width: 1500px;
+  margin: auto;
+  width: 100%; }
+
+.producto:hover {
+  padding: 10px;
+  border: 2px solid red; }
+
+.row-contacto {
+  padding: 3%;
+  height: 100vh !important; }
+  .row-contacto .form-container form {
+    margin-top: 18%;
+    background-color: red;
+    height: 84%;
+    width: 80%;
+    padding: 5%;
+    border: 2px solid black; }
+    .row-contacto .form-container form .titulo-contacto {
+      text-align: center;
+      margin-top: 5%; }
+    .row-contacto .form-container form input {
+      width: 100%;
+      height: 10%;
+      margin-bottom: 5%; }
+  .row-contacto .titulo-mapa {
+    margin-bottom: 0% !important; }
+  .row-contacto .mapa {
+    width: 100%;
+    height: 85%;
+    border: 2px solid black !important; }
+
+.titulo-preguntas {
+  margin-top: 5%;
+  margin-bottom: 1% !important; }
+
+.accordion {
+  max-width: 60%;
+  margin: auto;
+  margin-bottom: 5%; }
+
+.accordion-item {
+  margin-bottom: 1% !important;
+  border: 2px solid black !important; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box; }
+
+main {
+  margin-bottom: 3%; }
+
+@font-face {
+  font-family: japanola;
+  src: url(../resorces/typo/Japanola.otf); }
+
+body {
+  background-color: #1e2023; }
+
+.body-zapatillas {
+  background-color: #1e2023 !important; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9%;
+  width: 101%;
+  background-color: black;
+  position: fixed;
+  z-index: 100;
+  top: 0; }
+  .nav .div-item .nav-item {
+    color: white;
+    transition: .5s;
+    text-align: center; }
+  .nav .div-item .nav-item:hover {
+    color: red; }
+  .nav .logo {
+    font-family: japanola;
+    color: red;
+    font-size: 4.3em;
+    text-align: center; }
+
+footer {
+  background-color: black;
+  height: 6%;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: center; }
+  footer h4 {
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin: auto; }
+  footer .iconos {
+    height: 48px;
+    width: 48px; }
+
+main .titulo, main .seccion-productos .seccion-productos-titulo, .seccion-productos main .seccion-productos-titulo, main .row-contacto .titulo-mapa, .row-contacto main .titulo-mapa, main .titulo-preguntas, main .about1 .titulo-about {
+  margin-top: 6%;
+  text-align: center;
+  color: red;
+  margin-bottom: 7%; }
+
+main .about1 {
+  max-width: 87%;
+  margin: auto;
+  margin-bottom: 7%; }
+  main .about1 .img-about-container {
+    margin-bottom: 5%; }
+    main .about1 .img-about-container .img-about {
+      width: 100%;
+      height: 100%;
+      margin-right: auto; }
+  main .about1 .titulo-about {
+    margin-top: -5%;
+    margin-bottom: 1%; }
+  main .about1 .texto-about {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+    color: white;
+    font-size: 1.5rem; }
+
+@media (max-width: 2560px) {
+  .selector-zapatillas {
+    margin-top: 5%; }
+  .seccion-productos {
+    padding: 5%; } }
+
+@media (max-width: 1024px) {
+  .selector-zapatillas {
+    margin-top: 7%; }
+  .titulo-preguntas {
+    margin-top: 8%; } }
+
+@media (max-width: 768px) {
+  .selector-zapatillas {
+    margin-top: 9%; }
+  .titulo-preguntas {
+    margin-top: 10%; } }
+
+@media (max-width: 767px) {
+  .nav {
+    position: absolute;
+    height: 30%; }
+  main {
+    margin-top: 80%;
+    margin-bottom: 5%; }
+  form {
+    margin: auto; }
+  .mapa {
+    margin: auto; }
+  .logo {
+    text-align: left; }
+  .nav-item {
+    text-align: left; } }

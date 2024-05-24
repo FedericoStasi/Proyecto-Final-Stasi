@@ -1,0 +1,15 @@
+.titulo-preguntas{
+    @extend .titulo;
+    margin-top: 5%;
+    margin-bottom: 1% !important;
+}
+.accordion{
+    max-width: 60%;
+    margin:auto;
+    margin-bottom: 5%;
+    
+}
+.accordion-item{
+    margin-bottom: 1% !important;
+    border: 2px solid black !important;
+} 
